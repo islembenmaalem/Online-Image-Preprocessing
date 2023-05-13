@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <header>
+        <h2>WelCome</h2>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Task</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+
+
+    <div id="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+    </div>
+
+    <!--Make sure to put "enctype="multipart/form-data" inside form tag when uploading files -->
+    <form action="asasa.php" method="post" enctype="multipart/form-data" >
+    <!--input tag for file types should have a "type" attribute with value "file"-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+        <input  type="file" name="uploadfile" /></br>
+    </br>   <input  type="submit" name="uploadfilesub" value="upload" />
+        
+    </div>
+ 
+    </form>
+<footer><p>By Islem Ben Maalem</p></footer>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 2000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader_bg").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+</body>
+</html>

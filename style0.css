@@ -1,0 +1,158 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li,a,button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #24252A;
+
+}
+.nav__links {
+    list-style: none;
+}
+ 
+.nav__links li {
+ 
+    display: inline-block;
+    padding: 0px 20px;
+}
+ 
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+ 
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loader img {
+    width: 280px;
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
+
+#myDiv {
+  padding:5px 300px 5px 5px;
+  margin-top:270px;
+  margin-left: 500px;
+  margin-right: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+input[type="submit"]  {
+	background: #B9DFFF;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+    padding:8px 30px;
+
+}
+
+input[type="submit"]:hover {
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+input[type="file"] {
+    max-width: 100%;
+    color: #444;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    padding:5px 300px 5px 10px;
+
+  }
+  input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+ 
+ 
+  p {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #24252A;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #edf0f1;
+ }
+  
